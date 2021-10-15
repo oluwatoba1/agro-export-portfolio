@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
+<head>
    <!-- Meta Tags -->
    <meta charset="utf-8">
    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
@@ -28,7 +28,48 @@
    <!-- Style Sheet -->
    <link rel="stylesheet" href="startup-portfolio/css/style.css">
    <link rel="stylesheet" href="startup-portfolio/css/custom.css">
-   </head>
+
+   <style>
+      .product-text{
+         font-size: 18px; 
+         font-weight: 400; 
+         color: #000;
+         padding: 10px 0;
+      }
+
+      .highlighted{
+         font-weight: 600;
+      }
+
+      .product-wrapper{
+         padding: 20px 40px;
+      }
+
+      .product-listing{
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         column-gap: 10px;
+      }
+
+      @media screen and (max-width: 768px) {
+         .product-text{
+            font-size: 14px;
+         }
+
+         .highlighted{
+            font-weight: 600;
+         }
+
+         .product-wrapper{
+            padding: 10px 20px;
+         }
+
+         .product-listing{
+            grid-template-columns: repeat(1, 1fr);
+      }
+      }
+   </style>
+</head>
 
 <body data-offset="90" data-spy="scroll" data-target=".navbar">
 
@@ -297,6 +338,23 @@
                   </div>
                </a>
             </div>
+         </div>
+
+         <div class="product-wrapper">
+            <p class="product-text">Our Value Chain of growers and suppliers offer a range of products that serve a range of clients around the globe.
+            </p>
+            <ul class="product-listing">
+               <li class="product-text highlighted">Sesame</li>
+               <li class="product-text highlighted">Soya beans</li>
+               <li class="product-text highlighted">Baobab Fruit</li>
+               <li class="product-text highlighted">Moringa</li>
+               <li class="product-text highlighted">Dried Hibiscus</li>
+               <li class="product-text highlighted">Tiger Nut (Yellow Nutsedge)</li>
+               <li class="product-text highlighted">Dried Fruits ( Mango, Coconut)</li>
+               <li class="product-text highlighted">Coconut Shell Charcoal</li>
+               <li class="product-text highlighted">Sisal (Agaeve Plant) fiber</li>
+               <li class="product-text highlighted">Stone Flower</li>
+            </ul>
          </div>
       </div>
    </div>
